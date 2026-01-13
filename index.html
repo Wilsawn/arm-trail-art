@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arm Trail Art</title>
+
+    <script src="arm.js"></script>
+    <script src="main.js"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: rgb(255, 255, 255);
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+
+        #canvas {
+            z-index: 0;
+        }
+
+        #trail {
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <canvas id="trail"></canvas>
+</body>
+</html>
